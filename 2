@@ -28,14 +28,12 @@ public class Rect {
         window.getContentPane().add(new Kvadrat());
         
     }}
-class Kvadrat extends JPanel{
+class Kvadrat extends JComponent{
+
     
-  private Color colorWhite;  
-    
-   
+     
     public void paintComponent(Graphics g) {
-   
-        this.setBackground(colorWhite);
+        this.setBackground(Color.WHITE);
          
         g.setColor (Color.red);
         g.drawLine (10, 20, 100, 50);
